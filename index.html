@@ -1,24 +1,83 @@
----
-layout: posts
----
-        {% for post in paginator.posts %}
-        <li>
-            <time>{{ post.date | date_to_string }}</time>
-            <h3>{% if page.link %}<a href="{{ post.link }}">{{ post.title }}</a> *{% else %}<a href="{{ post.url }}">{{ post.title }}</a>{% endif %}</h3>
-            {{ post.content }}
-        </li>
-        {% endfor %}
-    </ul>
-</article>
 
-{% if paginator.total_pages > 1 %}
-<div class="paginator">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer">Back</a>
-  {% endif %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="./favicon.png">
+		<title>LampiãoSec</title>
+		<style>
+			div {
+				width: 50%;
+				text-align: left;
+			}
+			a {
+				text-decoration: none;
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div>
+			  _	<pre>                                   
+      _\ ____) \____________________________________________________     
+     (_)[___]{}<______________________Arc4nj0_______________________\    
+       /     )_/          
+            
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
-  {% endif %}
-</div>
-{% endif %}
+<strong>lampiaosec@everywhere $ cat about.txt</strong>
+
+We are a information security research group. Our intent is to learn more and more about
+this field and publish our results, never forgetting to help the free software community
+and to fight for a world without supervision.
+
+We believe that the world can and should be free. If the hacking is the way to do that,
+then we will hack it :)
+
+<strong>lampiaosec@everywhere $ cat where_we_are.txt</strong>
+
+E-mail:
+	lampiaosec[at]riseup[dot]net
+Facebook:
+	<a href="https://fb.me/lampiaosec" target="_blank">https://fb.me/lampiaosec</a>
+GitHub:
+	<a href="https://github.com/lampiaosec" target="_blank">https://github.com/lampiaosec</a>
+IRC:
+	#lampiaosec at OFTC
+
+<strong>lampiaosec@everywhere $ cat team.txt</strong>
+
+[+] cascudo
+		<a href="http://github.com/lucascudo" target="_blank">https://github.com/lucascudo</a>
+		<a href="http://lucas.redeaberta.com.br" target="_blank">http://lucas.redeaberta.com.br</a>
+[+] gjuniioor
+		gjuniioor[at]protonmail[dot]ch
+		<a href="https://github.com/gjuniioor" target="_blank">https://github.com/gjuniioor</a>
+		<a href="https://gjuniioor.github.io" target="_blank">https://gjuniioor.github.io</a>
+[+] nekoone
+		nekoone[at]riseup[dot]net
+		<a href="https://github.com/n3k00n3" target="_blank">https://github.com/n3k00n3</a>
+[+] userx
+		user_x[at]riseup[dot]net
+		<a href="https://github.com/UserXGnu" target="_blank">https://github.com/UserXGnu</a>
+		<a href="https://userxgnu.github.io" target="_blank">https://userxgnu.github.io</a>
+		
+<strong>lampiaosec@everywhere $ cat tools.txt</strong>
+
+[+] <a href="https://github.com/lampiaosec/virgulino/" target="_blank">virgulino</a> - steganography
+[+] <a href="https://github.com/lampiaosec/jackthestripper/" target="_blank">jackthestripper</a> - MITM Attack
+
+<strong>lampiaosec@everywhere $ cat talks.txt</strong>
+
+[+] CTF [+]
+    <a href="https://github.com/ctf-br/kit-palestrante" target="_blank">CTF-BR at UFBA</a>
+    <a href="https://github.com/ctf-br/kit-palestrante" target="_blank">CTF-BR at Ruy Barbosa</a>
+
+[+] Privacy [+]
+    <a href="https://gjuniioor.github.io/talks/seguranca-da-informacao-privacidade/" target="_blank">"SI e Privacidade" at Semana CTS</a>
+
+</pre>
+			</div>
+		</center>
+	</body>
+</html>
+
